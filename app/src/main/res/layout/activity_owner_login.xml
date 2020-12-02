@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_owner_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#d7d9da"
+    android:padding="10dp">
+
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/layoutScroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:text="Username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#910a0a"
+                android:layout_marginTop="45dp"
+                android:id="@+id/textOwnerEmailLog" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:id="@+id/editOwnerUsername" />
+
+            <TextView
+                android:text="Password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#910a0a"
+                android:layout_marginTop="45dp"
+                android:id="@+id/textOwnerPasswordLog" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:id="@+id/editOwnerpassword"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#e96d33"
+                android:textColor="#ffffff"
+
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/btnOwnerlogin"
+                android:text="Login" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#2fa617"
+                android:textColor="#ffffff"
+
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:layout_marginTop="40dp"
+                android:id="@+id/btnRegisterOwner"
+                android:text="สมัครสมาชิก"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_owner"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#d7d9da">
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_marginBottom="15dp">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/garage" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="User info  "
+                    android:textSize="40sp"
+                    android:layout_span="1"
+                    android:layout_margin="10dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="1dip"
+                android:background="#0e0e0e"
+
+                android:layout_width="match_parent" />
+
+            <!--<TableRow-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="ID : "-->
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/txtMemberID"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="MemberID" />-->
+            <!--</TableRow>-->
+
+
+            <!--<TableRow-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Password : "-->
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/txtPassword"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Password" />-->
+            <!--</TableRow>-->
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ชื่อผู้ใช้ : "
+                    android:textSize="30sp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textSize="30sp"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Username : "
+                    android:textSize="30sp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/txtUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:textSize="30sp"/>
+            </TableRow>
+
+            <View
+                android:layout_height="1dip"
+                android:background="#0e0e0e"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="#e1690d"
+                android:textColor="#ffffff"
+
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:padding="10dp"
+                android:layout_marginTop="40dp"
+                android:id="@+id/btnAdd"
+                android:text="เพิ่มร้านซ่อม" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="#2934b1"
+                android:textColor="#ffffff"
+
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:padding="10dp"
+                android:layout_marginTop="40dp"
+                android:id="@+id/btnEditGarage"
+                android:text="แก้ไขข้อมูลร้าน" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="#cd414140"
+                android:textColor="#ffffff"
+
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:padding="10dp"
+                android:layout_marginTop="40dp"
+                android:id="@+id/btnLogout"
+                android:text="ออกจากระบบ" />
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

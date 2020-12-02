@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/NameList"
+        android:layout_width="470dp"
+        android:layout_height="50dp"
+        android:paddingLeft="7dp"
+        android:text="Name..."
+        android:textStyle="bold"
+        android:textSize="45sp"
+        android:gravity="left|center"
+        android:layout_weight="1"
+        android:textColor="@color/colorBlack"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/AddressList"
+        android:layout_width="470dp"
+        android:layout_height="wrap_content"
+        android:text="Address..."
+        android:layout_marginTop="4dp"
+        android:textSize="30sp"
+        android:gravity="left|center"
+        android:layout_weight="1"
+        android:paddingLeft="3dp"
+        android:textColor="@color/colorBlack"
+        android:layout_below="@+id/NameList"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/TelephoneList"
+        android:layout_width="470dp"
+        android:layout_height="wrap_content"
+        android:text="Telephone..."
+        android:textSize="30sp"
+        android:gravity="left|center"
+        android:layout_weight="1"
+        android:paddingLeft="3dp"
+        android:textColor="@color/colorBlack"
+        android:layout_below="@+id/AddressList"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/TypeList"
+        android:layout_width="470dp"
+        android:layout_height="wrap_content"
+        android:text="Type..."
+
+        android:textSize="30sp"
+        android:gravity="left|center"
+        android:layout_weight="1"
+        android:paddingLeft="3dp"
+        android:textColor="@color/colorBlack"
+        android:layout_below="@+id/TelephoneList"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/DetailList"
+        android:layout_width="470dp"
+        android:layout_height="wrap_content"
+        android:text="Detail..."
+        android:textSize="30sp"
+        android:gravity="left|center"
+        android:layout_weight="1"
+        android:paddingLeft="3dp"
+        android:textColor="@color/colorBlack"
+        android:layout_below="@+id/TypeList"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/RouteList"
+        android:src="@drawable/route"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_above="@+id/DetailList"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/CallBtn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/call"
+        android:layout_above="@+id/DetailList"
+        android:layout_toRightOf="@+id/NameList"
+        android:layout_toEndOf="@+id/NameList" />
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/TextGarageName"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="1.0"
+        android:text="GarageName"
+        android:textSize="35sp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textProvinseGarage"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:text="OwnerName"
+        android:textSize="35sp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+</LinearLayout>

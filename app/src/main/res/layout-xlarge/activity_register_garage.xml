@@ -1,0 +1,197 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d7d9da"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="650dp">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="650dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textNameGarage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="ชื่อร้าน*"
+                android:textSize="40sp"/>
+
+
+            <EditText
+                android:id="@+id/editNameGarage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="100"
+                android:padding="30dp" />
+
+            <TextView
+                android:id="@+id/textNameOwnerGarage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="ชื่อเจ้าของร้าน*"
+                android:textSize="40sp"/>
+
+            <EditText
+                android:id="@+id/editNameOwnerGarage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="30"
+                android:padding="30dp" />
+
+            <TextView
+                android:id="@+id/textTypeGarage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="ประเภทร้าน*"
+                android:textSize="40sp"/>
+
+            <Spinner
+                android:id="@+id/spinnerTypeGarage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"/>
+
+
+            <!--<TextView-->
+                <!--android:id="@+id/textLat"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="45dp"-->
+                <!--android:text="ละติจูด" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/editLat"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="10dp"-->
+                <!--android:textSize="20sp" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/textLong"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="45dp"-->
+                <!--android:text="ลองจิจูด" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/editLong"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="10dp"-->
+                <!--android:textSize="20sp" />-->
+
+
+            <TextView
+                android:id="@+id/textAddressGarage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="ที่อยู่"
+                android:textSize="40sp"/>
+
+            <EditText
+                android:id="@+id/editAddressGarage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp" />
+
+            <TextView
+                android:id="@+id/texttelephone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="เบอร์โทรศัพท์"
+                android:textSize="40sp"/>
+
+            <EditText
+                android:id="@+id/editTelephone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="30dp" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/textProvinseGarage"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="45dp"-->
+                <!--android:text="จังหวัด" />-->
+
+
+            <!--<Spinner-->
+                <!--android:id="@+id/spinnerProvinseGarage"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" />-->
+
+            <TextView
+                android:id="@+id/textDetailGarage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="ข้อมูลร้าน"
+                android:textSize="40sp"/>
+
+            <EditText
+                android:id="@+id/editDetailGarage"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:maxLength="500"
+                android:padding="30dp"
+                android:hint="โปรดระบุหมายเหตุ เช่น รับเฉพาะยี่ห้อ/รุ่น/เวลาเปิด-ปิด/สามารถรับซ่อมนอกสถานที่ได้ เป็นต้น"
+                android:textColorHint="#999999"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/btnGarage"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="30dp"
+                android:background="#f43477"
+
+                android:padding="10dp"
+                android:text="เพิ่ม"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="30dp"
+                android:background="#414140"
+
+                android:padding="10dp"
+                android:text="ยกเลิก"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

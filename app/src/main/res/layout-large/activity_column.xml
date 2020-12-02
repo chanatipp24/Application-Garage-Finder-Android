@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <!--<TextView-->
+        <!--android:id="@+id/TextGarageID"-->
+        <!--android:layout_width="10dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_weight="0.2"-->
+        <!--android:text="ID"-->
+        <!--android:textAppearance="?android:attr/textAppearanceSmall" />-->
+
+    <TextView
+        android:id="@+id/TextGarageName"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1.0"
+        android:text="GarageName"
+        android:textSize="20sp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/TextOwnerName"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:text="OwnerName"
+        android:textSize="20sp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+        <ImageButton
+            android:id="@+id/btnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:src="@android:drawable/ic_menu_manage"/>
+
+        <ImageButton
+            android:id="@+id/btnMap"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:src="@android:drawable/ic_dialog_map"/>
+
+        <ImageButton
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:src="@android:drawable/ic_delete"/>
+</LinearLayout>

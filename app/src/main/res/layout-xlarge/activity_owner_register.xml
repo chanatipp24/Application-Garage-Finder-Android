@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_owner_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#d7d9da">
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:text="ชื่อผู้ใช้ :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:textColor="#910a0a"
+                android:textStyle="bold"
+                android:textSize="50sp"
+                android:id="@+id/textOwnername" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="40dp"
+                android:maxLength="50"
+                android:id="@+id/txtName" />
+
+            <TextView
+                android:text="Username :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:textColor="#910a0a"
+                android:textStyle="bold"
+                android:textSize="50sp"
+                android:id="@+id/textUsername"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="40dp"
+                android:maxLength="15"
+                android:id="@+id/txtUsername"/>
+
+
+            <TextView
+                android:text="Password/Confirm Password :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:textColor="#910a0a"
+                android:textStyle="bold"
+                android:textSize="50sp"
+                android:id="@+id/textpassword" />
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="13"
+                android:maxLength="15"
+                android:padding="40dp"
+                android:id="@+id/txtPassword" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text=" Again "
+                    android:textSize="30sp"
+                    android:padding="30dp"/>
+
+                <EditText
+                    android:id="@+id/txtConPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="15"
+                    android:maxLength="15"
+                    android:padding="40dp"
+                    android:inputType="textPassword" />
+
+            </TableRow>
+
+            <android.support.v7.widget.AppCompatButton
+                android:onClick="register_register"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="#2fa617"
+                android:textColor="#ffffff"
+                android:layout_marginTop="40dp"
+
+                android:textStyle="bold"
+                android:textSize="40sp"
+                android:padding="10dp"
+                android:text="สมัครสมาชิก"
+                android:id="@+id/btnRegis" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="40dp"
+                android:background="#414140"
+
+                android:padding="10dp"
+                android:text="ยกเลิก"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

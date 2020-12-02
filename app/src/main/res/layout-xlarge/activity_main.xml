@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#d7d9da">
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/searchID"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_margin="10dp"
+            android:background="#f4f4f2"
+            android:hint="ค้นหาร้านซ่อม,ชื่อร้าน,จังหวัด,เขต,ย่าน"
+            android:drawableLeft="@drawable/ab"
+            android:paddingLeft="10dp"/>
+
+    </TableRow>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="0.18"
+        android:gravity="center">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/neabyID"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/mapp" />
+
+            <ImageView
+                android:id="@+id/toolsID"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/tools" />
+        </TableRow>
+    </TableLayout>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_weight="0.18"
+        android:gravity="center"
+        android:layout_marginTop="5dp">
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/motoID"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                app:srcCompat="@drawable/moto"
+                android:layout_margin="15dp"
+                />
+
+            <ImageView
+                android:id="@+id/carID"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                app:srcCompat="@drawable/carr"
+                android:layout_margin="15dp"
+                />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
